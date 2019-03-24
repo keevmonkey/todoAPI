@@ -1,7 +1,7 @@
 # spec/factories/items.rb
 FactoryBot.define do
-  factory :items do
-    name { Faker::StarWars.character }
+  factory :item do
+    name { Faker::Movies::StarWars.character }
     done { false }
     todo_id { nil }
   end
